@@ -8,9 +8,9 @@ import java.util.List;
 
 import escola.academico.dominio.aluno.Aluno;
 import escola.academico.dominio.aluno.AlunoRepository;
-import escola.academico.dominio.aluno.CPF;
 import escola.academico.dominio.aluno.Email;
 import escola.academico.dominio.aluno.Telefone;
+import escola.shared.dominio.CPF;
 
 public class AlunoRepositoryJDBC implements AlunoRepository {
 

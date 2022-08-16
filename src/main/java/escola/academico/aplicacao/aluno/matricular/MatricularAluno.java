@@ -1,9 +1,9 @@
 package escola.academico.aplicacao.aluno.matricular;
 
-import escola.academico.dominio.PublicadorEventos;
 import escola.academico.dominio.aluno.Aluno;
 import escola.academico.dominio.aluno.AlunoMatriculado;
 import escola.academico.dominio.aluno.AlunoRepository;
+import escola.shared.dominio.evento.PublicadorEventos;
 
 public class MatricularAluno {
 	

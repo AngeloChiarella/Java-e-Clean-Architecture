@@ -1,4 +1,4 @@
-package escola.academico.dominio;
+package escola.shared.dominio.evento;
 
 public abstract class Ouvinte {
 

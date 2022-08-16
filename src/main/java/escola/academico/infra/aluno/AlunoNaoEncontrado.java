@@ -1,6 +1,6 @@
 package escola.academico.infra.aluno;
 
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 
 public class AlunoNaoEncontrado extends RuntimeException {
 	private static final long serialVersionUID = 1L;

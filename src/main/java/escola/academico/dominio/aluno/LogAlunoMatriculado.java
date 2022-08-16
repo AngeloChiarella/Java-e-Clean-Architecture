@@ -2,8 +2,8 @@ package escola.academico.dominio.aluno;
 
 import java.time.format.DateTimeFormatter;
 
-import escola.academico.dominio.Evento;
-import escola.academico.dominio.Ouvinte;
+import escola.shared.dominio.evento.Evento;
+import escola.shared.dominio.evento.Ouvinte;
 
 public class LogAlunoMatriculado extends Ouvinte {
 

@@ -7,8 +7,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import escola.academico.dominio.aluno.Aluno;
-import escola.academico.dominio.aluno.CPF;
 import escola.academico.dominio.aluno.Email;
+import escola.shared.dominio.CPF;
 
 class AlunoTest {
 

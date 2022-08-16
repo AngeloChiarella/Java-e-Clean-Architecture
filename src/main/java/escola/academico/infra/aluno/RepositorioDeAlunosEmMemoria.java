@@ -5,7 +5,7 @@ import java.util.List;
 
 import escola.academico.dominio.aluno.Aluno;
 import escola.academico.dominio.aluno.AlunoRepository;
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 
 public class RepositorioDeAlunosEmMemoria implements AlunoRepository {
 	private List<Aluno> matriculados = new ArrayList<>();

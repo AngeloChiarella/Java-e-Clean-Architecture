@@ -2,7 +2,7 @@ package escola.gamificacao.dominio.selo;
 
 import java.util.List;
 
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 
 public interface RepositorioDeSelos {
 

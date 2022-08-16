@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 
 import escola.academico.aplicacao.aluno.matricular.MatricularAluno;
 import escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
-import escola.academico.dominio.PublicadorEventos;
 import escola.academico.dominio.aluno.Aluno;
-import escola.academico.dominio.aluno.CPF;
 import escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
+import escola.shared.dominio.CPF;
+import escola.shared.dominio.evento.PublicadorEventos;
 
 class MatricularAlunoTest {
 

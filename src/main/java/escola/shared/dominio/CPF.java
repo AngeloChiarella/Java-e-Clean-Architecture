@@ -1,4 +1,4 @@
-package escola.academico.dominio.aluno;
+package escola.shared.dominio;
 
 public class CPF { // PADR�O VALUE OBJECT (^N � UMA ENTIDADE)
 
