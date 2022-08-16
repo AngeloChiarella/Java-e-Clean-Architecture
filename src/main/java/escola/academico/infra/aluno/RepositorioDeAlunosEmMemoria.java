@@ -1,11 +1,11 @@
-package escola.infra.aluno;
+package escola.academico.infra.aluno;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import escola.dominio.aluno.Aluno;
-import escola.dominio.aluno.AlunoRepository;
-import escola.dominio.aluno.CPF;
+import escola.academico.dominio.aluno.Aluno;
+import escola.academico.dominio.aluno.AlunoRepository;
+import escola.academico.dominio.aluno.CPF;
 
 public class RepositorioDeAlunosEmMemoria implements AlunoRepository {
 	private List<Aluno> matriculados = new ArrayList<>();

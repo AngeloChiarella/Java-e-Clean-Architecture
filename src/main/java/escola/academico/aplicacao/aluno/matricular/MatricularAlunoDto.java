@@ -1,8 +1,8 @@
-package escola.aplicacao.aluno.matricular;
+package escola.academico.aplicacao.aluno.matricular;
 
-import escola.dominio.aluno.Aluno;
-import escola.dominio.aluno.CPF;
-import escola.dominio.aluno.Email;
+import escola.academico.dominio.aluno.Aluno;
+import escola.academico.dominio.aluno.CPF;
+import escola.academico.dominio.aluno.Email;
 
 public class MatricularAlunoDto {
 

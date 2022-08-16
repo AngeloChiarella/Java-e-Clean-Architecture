@@ -1,4 +1,4 @@
-package escola.dominio.aluno;
+package escola.academico.dominio.aluno;
 
 public interface CifradorSenha {
 

@@ -4,16 +4,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import escola.dominio.aluno.Aluno;
-import escola.dominio.aluno.CPF;
-import escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import escola.academico.aplicacao.aluno.matricular.MatricularAluno;
+import escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
+import escola.academico.dominio.PublicadorEventos;
+import escola.academico.dominio.aluno.Aluno;
+import escola.academico.dominio.aluno.CPF;
+import escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 
 class MatricularAlunoTest {
 
 	@Test
 	void alunoDeveSerPersistido() {
 		RepositorioDeAlunosEmMemoria repositorioMemoria = new RepositorioDeAlunosEmMemoria();
-		MatricularAluno useCase = new MatricularAluno(repositorioMemoria);
+		PublicadorEventos publicador = new PublicadorEventos();
+		MatricularAluno useCase = new MatricularAluno(repositorioMemoria, publicador);
 
 		MatricularAlunoDto dados = new MatricularAlunoDto("Fulano", "123.456.789-00", "fulano@email.com");
 

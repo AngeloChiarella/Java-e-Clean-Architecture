@@ -1,11 +1,11 @@
-package escola.dominio.aluno;
+package escola.academico.dominio.aluno;
 
 public class Telefone {
 
 	private String ddd;
 	private String numero;
 
-	public Telefone(String ddd, String numero) { // VALIDAÇÃO DE NUMERO
+	public Telefone(String ddd, String numero) { // VALIDAï¿½ï¿½O DE NUMERO
 		if (ddd == null || numero == null) {
 			throw new IllegalArgumentException("DDD e Numero sao obrigatorios!");
 		}

@@ -1,4 +1,4 @@
-package escola.dominio.aluno;
+package escola.academico.dominio.aluno;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,11 +18,14 @@ public class Aluno {
 	}
 
 	public void addTelefone(String ddd, String numero) {
+		if (telefones.size() == 2) {
+			throw new IllegalArgumentException("Numero maximo de telefones atingido!");
+		}
 		this.telefones.add(new Telefone(ddd, numero));
 	}
 
-	public String getCpf() {
-		return cpf.getNumero();
+	public CPF getCpf() {
+		return cpf;
 	}
 
 	public String getNome() {
@@ -36,7 +39,7 @@ public class Aluno {
 	public List<Telefone> getTelefones() {
 		return telefones;
 	}
-	
+
 	public String getSenha() {
 		return senha;
 	}

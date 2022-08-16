@@ -1,4 +1,4 @@
-package escola.infra.aluno;
+package escola.academico.infra.aluno;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,11 +6,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-import escola.dominio.aluno.Aluno;
-import escola.dominio.aluno.AlunoRepository;
-import escola.dominio.aluno.CPF;
-import escola.dominio.aluno.Email;
-import escola.dominio.aluno.Telefone;
+import escola.academico.dominio.aluno.Aluno;
+import escola.academico.dominio.aluno.AlunoRepository;
+import escola.academico.dominio.aluno.CPF;
+import escola.academico.dominio.aluno.Email;
+import escola.academico.dominio.aluno.Telefone;
 
 public class AlunoRepositoryJDBC implements AlunoRepository {
 
@@ -25,7 +25,7 @@ public class AlunoRepositoryJDBC implements AlunoRepository {
 		try {
 			String sql = "INSERT INTO Aluno VALUES(?, ?, ?)";
 			PreparedStatement ps = connection.prepareStatement(sql);
-			ps.setString(1, aluno.getCpf());
+			ps.setString(1, aluno.getCpf().toString());
 			ps.setString(2, aluno.getNome());
 			ps.setString(3, aluno.getEmail());
 			ps.execute();

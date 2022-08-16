@@ -1,9 +1,9 @@
-package escola.infra.aluno;
+package escola.academico.infra.aluno;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import escola.dominio.aluno.CifradorSenha;
+import escola.academico.dominio.aluno.CifradorSenha;
 
 public class CifradorSenhaMD5 implements CifradorSenha {
 
